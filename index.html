@@ -102,12 +102,46 @@
         <div class="my-auto">
           <h2 class="mb-5">Projects</h2>
 
+          
+          <div class ="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Aberystwyth Car Enthusiasts</h3>
+              <div class="subheading mb-3">iOS and Android Application</div>
+              <div class="subheading mb-3">What does it do?</div>
+              <p>The A.C.E app allows members to quickly access the society's calendar so that nobody is in any doubt as to when and qwhere evemnts are taking place. It allows committee members to publish events and make changes to them retrospectively. Members can recieve notifcations when events are published or cancelled, along with logging in to see other members of the society and being able to show what they drive and see what others drive as well.</p>
+              <div class="subheading mb-3">Why was it built?</div>
+              <p>Over the time I have been a member of A.C.E, event details have always been published on social media or in group chats. Both of these methods mean scrolling back to find details of events which can be infuriating somethimes. This app gives members a dedicated place where they can view events, along with all of the important details about them.</p>
+              <div class="subheading mb-3">How does it work?</div>
+              <p>The main functionality of this app is done using Google Firebase. The app connects to a Firebase Firestore database to collect all the event data, along with cloud storage for the posters and profile pictures. The app uses listeners to display this data along with realtime updates if the data is changed. Firebase Authentication is used to handle the user base, and Cloud Functions are used to supply notifications to those devices which are opted in for these.</p>
+              <div class="subheading mb-3">iOS</div>
+              <a href="https://apps.apple.com/gb/app/aberystwyth-car-enthusiasts/id6742192014?uo=2"><img src = "svg/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt = "Download on the App Store"/></a>
+              <div class="subheading mb-3">Android</div>
+              <a href='https://play.google.com/store/apps/details?id=com.witcombdevelopment.aber_car_enthusiasts'><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png' height="50"/></a>              
+              
+            </div>
+          </div>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+            <div class="resume-content mr-auto">
+              <h3 class="mb-0">Cook Times Calculator</h3>
+              <div class="subheading mb-3">iOS Application</div>
+              <div class="subheading mb-3">What does it do?</div>
+              <p>This app provides a quick way to convert the instructions on food packaging to air fryer instructions along with calculating the times it would take to roast a meat joint.</p>
+              <div class="subheading mb-3">Why was it built?</div>
+              <p>Since air fryers have taken off, it's difficult to find somebody without one, and yet most food packaging still didn't contain instructions for cooking using an air fryer, conversion charts exist on the interent but this app can be accessed more quickly than those websites and does all the calculations for you.</p>
+              <div class="subheading mb-3">How does it work?</div>
+              <p>Common practise for converting to air fryer conversions is to take 20 degrees off the temperature and reducing the time by 20%, once the user has input the original instructions and cooking method, the app then calculates the new instructions using these formulas and displays the results to the user.</p>
+              <p>The meat roasting section of the app works with the user enetring the weight of their joint and the type of meat it is, the app then calculates the time it would take this to roast using the time tasken per kilo * the number of kilos, depening on the meat selected, the user may have the choice of how well they would like the meat cooked.</p>
+              <div class="subheading mb-3">iOS</div>
+              <a href="https://apps.apple.com/ph/app/cook-times-calculator/id6740811337?uo=2"><img src = "svg/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt = "Download on the App Store"/></a>
+              <!-- <button><a href="https://github.com/hapw1/anagram-solver-ios">Click here to view GitHub repository</a></button> -->
+            </div>
+          </div>
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Anagram Solver</h3>
               <div class="subheading mb-3">iOS and Android Application</div>
               <div class="subheading mb-3">What does it do?</div>
-              <p>The Anagram Solver app is a simple application, built natively for both Android and iOS, designed to assist with solving anagrams and crossword puzzles. The app can full anagrams where all letters are known but the order is not, it can find potential solutions to anagrams where some of the letters are kown but the order is not and can also help solve crossword puzzles where some of the letters are known and the position of each letter within the word is also know, beyond that, this app can also be used to find sub-anagrams, words of lesser length that can be made with some of the original letters.</p>
+              <p>The Anagram Solver app is a simple application, built natively for both Android and iOS, designed to assist with solving anagrams and crossword puzzles. The app can full anagrams where all letters are known but the order is not, it can find potential solutions to anagrams where some of the letters are known but the order is not and can also help solve crossword puzzles where some of the letters are known and the position of each letter within the word is also know, beyond that, this app can also be used to find sub-anagrams, words of lesser length that can be made with some of the original letters.</p>
               <div class="subheading mb-3">Why was it built?</div>
               <p>The intention behind this application was to built a simple app, where the focus was mainly set upon the publishing and review process of each of the major app store, the complexity of the app was less important here as this was an excersise in learning to publish an application and what was involved with that.</p>
               <div class="subheading mb-3">How does it work?</div>
@@ -123,61 +157,7 @@
 
             </div>
           </div>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Track Tel</h3>
-              <div class="subheading mb-3">iOS and Android Application</div>
-              <div class="subheading mb-3">What does it do?</div>
-              <p>TrackTel is an app designed for use on trackdays, hillclimbs and sprint courses, used to record the lap times of a users track day to mointor improvement throughout a day or between changes made to a car. This application began development as my final year project at university and since then has had a re-designed UI and significant changes to the way in which laps are timed. It uses GPS to track the location of the user and geofencing determine whether or not the start/finish line of the chosen track has been crossed and take lap times and the average and VMax speed of the user.</p>
-              <div class="subheading mb-3">Why was it built?</div>
-              <p>TrackTel began development as my final year project for university where I built the first version of this project as an Android application. Upon graduation, I decided that I could build a better version of this app and carried on developing it with a better timinging algoriuthm based on more accurate location tracking along with a database of UK race racks for the user to choose from. This was when i began developing it as an iOS application.</p>
-              <div class="subheading mb-3">How does it work?</div>
-              <p>The app has a database containing all major UK racetracks, along with basic information about them such as the name, location, number of layouts and the length, number of turns and timing information for each layout.</p>
-              <p>Timing is achieved by checking whether a line drawn between the current and last location of the user intersects with a line drawn between two points either side of the start/finish line. A geofence is also set up on the start finish line so that the app only checks if these two lines intersect within 100m of the start/finish line and not all the way round the track as there is no need to check if the finish line is apssed when the user is on the otherside of the track, making the app more efficient.</p>
-              <p>CoreData is used to store any data saved from the user's trackday so that it can then be accessed and views at a later date.</p>
-              <div class="subheading mb-3">iOS</div>
-              <button><a href="https://github.com/hapw1/tracktel-ios">Click here to view GitHub repository</a></button>
-
-              <div class="subheading mb-3">Android</div>
-              <button><a href="https://github.com/hapw1/tracktel-android">Click here to view GitHub repository</a></button>
-
-            </div>
-          </div>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">The Littlest Gear</h3>
-              <div class="subheading mb-3">iOS Application</div>
-              <div class="subheading mb-3">What does it do?</div>
-              <p>The intention behind The Littlest Gear was to bring industry with old fashioned practices right up to date. In the car restoration business, work often takes far longer than anticipated and cars can spend months or year at garages with little or no progress and poor comunication from garages.</p>
-              <p> The Littlest Gear gives the owner of the car a way to track the progress of their restoration right through from start to finish, allowing the work to be done to be agreed before hand, and as each job is completed, it will show as done in the app along with notes about the job and any issues they encountered along with pictures of the work and a breakdown of cost split up between materials and labour.</p>
-              <p>It also hands back some control to user over the restoration of their car regarding the work that can be done, as well as both owner and garage being able to add work to be done retrospectively, any new work added by the garage will have to be approved by the owner, and the job will be locked until this has happened putting a stop to unexpected bills for the owner at the end of a restoration.</p>
-              <div class="subheading mb-3">Why was it built?</div>
-              <p>The Littlest Gear was inspired by watching Richard hammond's Workshop and sesing how some of the problems encountered such as not billing for hours correctly and customers having to wait far longer than expected for projects to be completed, could have been solved.</p>
-              <p>This app then became an oppotunity to learn how to implement Firebase into a mobile application and make use of features such as Authentication, Databases and Cloud Firestore as these would be essential in producing an application that could be used by users with different levels of authorisation and be able to share data on one app between eachother.</p>
-              <div class="subheading mb-3"> Demo</div>
-              <p>Below is a video demonstrating the features currently implemented within The Littlest Gear.</p>
-              <video width="720" controls>
-                <source src="videos/Demo for Little Gear - HD.mp4" type="video/mp4">
-              </video>
-              <div class="subheading mb-3">iOS</div>
-              <button><a href="https://github.com/hapw1/littlest-gear-ios">Click here to view GitHub repository</a></button>
-            </div>
-          </div>
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">AI Image Generater</h3>
-              <div class="subheading mb-3">iOS Application</div>
-              <div class="subheading mb-3">What does it do?</div>
-              <p>This is a very simple app which allows users to genrate AI images from any given prompt and served as an introduction to using AI within a mobile application, in this case the SwiftOpenAI API which can be found <a href="https://github.com/jamesrochabrun/SwiftOpenAI" class="text">here</a></p>
-              <p>Currently implemented features include generating AI images from prompts and creating variations of a generated image, however, the ability to edit an image has not yet been implemented.</p>
-              <div class="subheading mb-3">Why was it built?</div>
-              <p>Recently, the number of AI tools available consumers has increased massively all with a myriad of use cases, this app was an introduction into using an AI API within a mobile application and how it works within a relatively simple application, laying the foundation for more complex use cases in the future.</p>
-              <div class="subheading mb-3">How does it work?</div>
-              <p>The user enters a prompt into a text box at the top of the screen and taps the "Generate Image" button, the app then requests an image from the OpenAIService using the user's prompt and the desired format (dalle2), displaying a ProgressView whilst waiting for a response from OpenAI. Upon receiving a response, the image is displayed assuming no errors are encountered, in which case the error message would be displayed instead.</p>
-              <div class="subheading mb-3">iOS</div>
-              <button><a href="https://github.com/hapw1/ai-image-generator">Click here to view GitHub repository</a></button>
-            </div>
-          </div>
+          
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Road Rally Navigation</h3>
